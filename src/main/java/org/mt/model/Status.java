@@ -7,6 +7,6 @@ import lombok.Data;
 public @Data class Status {
 	
 	private String code;
-	private String value; 
+	private String message; 
 
 }

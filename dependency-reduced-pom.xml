@@ -3,9 +3,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mt</groupId>
   <artifactId>money-transfer-api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <build>
-    <finalName>money-transfer-api</finalName>
+    <finalName>money-transfer-api-1.0-SNAPSHOT.jar</finalName>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>

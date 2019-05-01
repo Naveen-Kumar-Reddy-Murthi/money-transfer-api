@@ -15,7 +15,7 @@ public class MTDaoImpl implements MTDao {
 	public int updateAccounts(Transaction txn, Account account) throws Exception {
 		runner = new QueryRunner();
 		int updateCount = runner.update(DBUtils.getConnection(), MTDao.UPDATE_ACCT_QUERY, account.getCurrentBalance(),
-				txn.getDebitAccNo());
+				account.getAccountNumber());
 		int insertCount = runner.update(DBUtils.getConnection(), MTDao.TXN_INSERT_QUERY, txn.getType(),
 				txn.getDebitAccNo(), txn.getCreditAccNo(), txn.getTxnAmount(), MTConstants.Y.getValue());
 		runner = null;

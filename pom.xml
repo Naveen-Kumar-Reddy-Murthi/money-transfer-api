@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.mt</groupId>
 	<artifactId>money-transfer-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -85,10 +85,10 @@
 			<artifactId>jersey-media-moxy</artifactId>
 			<version>2.25</version>
 		</dependency>
-
+		
 	</dependencies>
 	<build>
-		<finalName>money-transfer-api</finalName>
+		<finalName>money-transfer-api-1.0-SNAPSHOT.jar</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>

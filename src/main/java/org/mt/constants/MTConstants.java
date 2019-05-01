@@ -8,9 +8,9 @@ import lombok.Setter;
 public enum MTConstants {
 	
 	NEW("NEW"),
-    INSUFFICIENT_FUNDS("INSUFFICIENT FUNDS"),
-    COMPLETED("COMPLETED"),
-    FAILED("FAILED"),
+    INSUFFICIENT_FUNDS("Insufficient Funds"),
+    COMPLETED("Completed"),
+    FAILED("Failed"),
     DEBIT("D"),
     CREDIT("C"),
 	INVALID_REQUEST("Invalid Request Type"),
@@ -21,7 +21,8 @@ public enum MTConstants {
 	Y("Y"),
 	TXN_SUCCESS("Transaction Successful"),
 	ONE("1"),
-	ZERO("0");
+	ZERO("0"),
+	OK("200");
 	
 	protected  @Getter @Setter String value;
 
