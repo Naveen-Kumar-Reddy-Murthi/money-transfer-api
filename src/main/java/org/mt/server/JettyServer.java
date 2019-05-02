@@ -55,12 +55,12 @@ public class JettyServer {
     private static void initializeH2DB() throws SQLException, InstantiationException, IllegalAccessException, ClassNotFoundException {
     	
     	Class.forName(DBUtils.DRIVER).newInstance();
-    	Connection connection = DriverManager.getConnection(DBUtils.URL, DBUtils.USER, DBUtils.PASSWORD);
+    	Connection connection = DriverManager.getConnection(DBUtils.CRT_URL, DBUtils.USER, DBUtils.PASSWORD);
     	connection.setAutoCommit(true);
     	
     	org.h2.tools.Server server = org.h2.tools.Server.createWebServer(new String[]{"-web","-webAllowOthers","-webPort","7071"}).start();
     	
-    	System.out.println("URL: jdbc:h2:" + server.getURL() + "/mtapiDB" );
+    	System.out.println("H2 DB web Console URL => " + server.getURL() + "/mtapiDB" );
     }
     
 	private static RequestLogHandler createRequestLogHandler() {

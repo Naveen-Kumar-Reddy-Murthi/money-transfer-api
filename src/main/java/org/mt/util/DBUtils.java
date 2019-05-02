@@ -12,7 +12,9 @@ import org.mt.model.Account;
 
 public class DBUtils {
 
-	public static final String URL = "jdbc:h2:~/mtapiDB;DB_CLOSE_ON_EXIT=FALSE";
+	//"jdbc:h2:~/mtapiDB2;DB_CLOSE_ON_EXIT=FALSE"
+	public static final String CRT_URL = "jdbc:h2:mem:mtapiDB007;INIT=RUNSCRIPT FROM 'classpath:h2db.sql'";
+	public static final String URL = "jdbc:h2:mem:mtapiDB007";
 	public static final String USER = "sa";
 	public static final String PASSWORD = "";
 	public static final String DRIVER = "org.h2.Driver";
