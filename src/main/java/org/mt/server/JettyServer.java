@@ -60,7 +60,7 @@ public class JettyServer {
     	
     	org.h2.tools.Server server = org.h2.tools.Server.createWebServer(new String[]{"-web","-webAllowOthers","-webPort","7071"}).start();
     	
-    	System.out.println("H2 DB web Console URL => " + server.getURL() + "/mtapiDB" );
+    	System.out.println("H2 DB web Console URL => " + server.getURL() + "/mtapiDB007" );
     }
     
 	private static RequestLogHandler createRequestLogHandler() {
