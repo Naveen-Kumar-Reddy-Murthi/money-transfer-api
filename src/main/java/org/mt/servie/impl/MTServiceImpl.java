@@ -33,7 +33,7 @@ public class MTServiceImpl implements MTService {
 			LOG.info("new balance after hard debit "+ account.getCurrentBalance().toString());
 			  count = dao.updateAccounts(txn, account);
 		}
-		
+		 
 		if(count == 1) {
 			status = new Status(MTConstants.ONE.getValue(), MTConstants.TXN_SUCCESS.getValue());
 		}

@@ -48,7 +48,7 @@ public class JettyServer {
             Logger.getLogger(JettyServer.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
 
-            server.destroy();
+            server.destroy();  
         }
     }
     

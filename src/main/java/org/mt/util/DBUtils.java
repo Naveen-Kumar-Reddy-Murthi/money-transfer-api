@@ -26,7 +26,7 @@ public class DBUtils {
 		try {
 			if (null == conn || conn.isClosed())
 
-			{
+			{  
 				try {
 					DbUtils.loadDriver(DRIVER);
 					conn = DriverManager.getConnection(URL, USER, PASSWORD);

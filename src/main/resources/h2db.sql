@@ -6,7 +6,7 @@ CREATE TABLE account (
   currentBalance DECIMAL NOT NULL,
   PRIMARY KEY (id)
 );
-
+ 
 INSERT INTO account(accountNumber, currentBalance, active) VALUES('50100200879179', 171769.54, 'Y');
 INSERT INTO account(accountNumber, currentBalance, active) VALUES('50100200315840', 51428.96, 'Y');
 INSERT INTO account(accountNumber, currentBalance, active) VALUES('50550400879100', 200.00, 'Y');
@@ -28,4 +28,4 @@ CREATE TABLE IF NOT EXISTS transaction(id bigint(11) NOT NULL AUTO_INCREMENT,
  txnDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, type VARCHAR(10) NOT NULL,
  debitAccNo VARCHAR(255) NOT NULL, creditAccNo VARCHAR(255) NOT NULL, txnAmount 
  DECIMAL NOT NULL, status VARCHAR(10)  NOT NULL, PRIMARY KEY (id));
- 
+  
