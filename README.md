@@ -19,25 +19,19 @@
      Sample Json Request for Debit
      
               {
-                   "id"           : "null",
-                   "txnDate"      : "null",
                    "debitAccNo"   : "50100200879179",
                    "creditAccNo"  : "30012569584586",
                    "type"         : "D",
-                   "txnAmount"    : "10000",
-                   "status"       : "null"
+                   "txnAmount"    : "10000"
              }
                  
       Sample Json Request for Credit
       
             {
-                 "id"             : "null",
-                 "txnDate"        : "null",
                  "debitAccNo"     :  "50100200879179",
                  "creditAccNo"    : "30012569584586",
                  "type"           : "C",
                  "txnAmount"      : "10000",
-                 "status"         : "null"
            }
        
  # Build and run as an executable jar
